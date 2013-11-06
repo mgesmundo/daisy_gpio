@@ -68,12 +68,12 @@ module.exports = function(config) {
      */
     my.config = {
 <span id='node_modules-daisy_gpio-cfg-model'>        /**
-</span>         * @cfg {String} model The model of the device. Values allowed:
+</span>         * @cfg {String} [model='aria']The model of the device. Values allowed:
          * 
          *  - aria: for an Acmesystems Aria G25
          *  - fox: for an Acmesystems FoxBoard G20
          */
-        model : 'fox',
+        model : 'aria',
 <span id='node_modules-daisy_gpio-cfg-test'>        /**
 </span>         * @cfg {Boolean} test Set true when not run in fox or aria
          */
@@ -251,11 +251,11 @@ module.exports = function(config) {
 </span>         * The constructor. When all the GPIO are ready to use, an init event is fired.
          * 
          * @constructor
-         * @param {String} [connector = 'D5'] The name of the connector
+         * @param {String} [connector = 'D12'] The name of the connector
          */
         init: function(connector) {
             var self = this;
-            connector = connector || 'D5';
+            connector = connector || 'D12';
             self.sup(connector);
             var Button = acme.InGpio;
             var i, btn;
@@ -279,11 +279,11 @@ module.exports = function(config) {
 </span>         * The constructor. When all the GPIO are ready to use, an init event is fired.
          * 
          * @constructor
-         * @param {String} [connector = 'D2'] The name of the connector
+         * @param {String} [connector = 'D11'] The name of the connector
          */
         init: function(connector) {
             var self = this;
-            connector = connector || 'D2';
+            connector = connector || 'D11';
             self.sup(connector);
             var Led = acme.OutGpio;
             var i, led;
