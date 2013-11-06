@@ -2,7 +2,7 @@
     "name": "daisy_gpio",
     "description": "GPIO manager for Acmesystems Aria/Fox boards with Daisy fast prototyping boards",
     "preferGlobal": "false",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "Marcello Gesmundo",
         "email": "mgesmundo@yoovant.com",
